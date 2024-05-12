@@ -16,7 +16,7 @@ function Register(){
       return toast.error("everey field should be filled");
     }
     try {
-      const response = await axios.post("http://127.0.0.1:8000/registration", user); // Use Axios to make the POST request
+      const response = await axios.post("https://fsotp.vercel.app/registration", user); // Use Axios to make the POST request
 
       if (response.data.error) {
         return toast.error(response.data.error);
