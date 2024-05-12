@@ -14,7 +14,7 @@ export default function Verification() {
       return toast.error("Please enter the OTP...");
     }
     try {
-      const response = await axios.post("http://127.0.0.1:8000/Verification", { otp: userotp }, {
+      const response = await axios.post("https://fsotp.vercel.app/Verification", { otp: userotp }, {
         headers: {
           'Content-Type': 'application/json'
         }
